@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Bt_5_JS">
+    <meta name="description" content="Bt_5_JS">
+    <meta name="keywords" content="Bt_5_JS">
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="3 days">
+    <meta name="author" content="alaminwebdev">
+
+    <title>Bt_5_js/jq</title>
+
+    <!--css links-->
+    
+    <link rel="stylesheet" href="vendor/aos/dist/aos.css">
+    <link rel="stylesheet" href="vendor/lightbox2-dev/dist/css/lightbox.min.css">
+    <link rel="stylesheet" href="jquery-ui-1.14.1.custom/jquery-ui.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/plugin.html">JS_plugin</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+<!-- Mixitup jq example -->
+<section>
+  <h2 class="text-center text-primary fw-bold display-4 shadow-lg p-3 bg-light rounded">
+    Mixitup jq example
+</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="text-center">
+          <a href="#" data-filter="all" class="btn btn-primary">All</a>
+          <a href="#" data-filter=".hb" class="btn btn-dark">Honda</a>
+          
+          <a href="#" data-filter=".sb" class="btn btn-success">Suzuki</a>
+          <a href="#" data-filter=".rb" class="btn btn-danger">Royal Enfield</a>
+          <a href="#" data-filter=".kb" class="btn btn-success">Kawasaki</a>
+          <a class="btn btn-warning" data-sort="order:asc">Accending</a>
+          <a class="btn btn-dark" data-sort="order:descending">Decending</a>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-3" id="hello">
+      <div class="col-lg-3 mix hb mb-2" data-order="1">
+        <div class="d_img">
+          <img src="image/hb1.png" class="w-100" alt="demo">
+        </div>
+      </div>
+
+      <div class="col-lg-3 mix hb mb-2" data-order="2">
+        <div class="d_img">
+          <img src="image/hb2.png" class="w-100" alt="demo">
+        </div>
+      </div>
+
+          
+      <div class="col-lg-3 mix sb mb-2" data-order="3">
+        <div class="d_img">
+          <img src="image/sb1.jpg" class="w-100" alt="demo">
+        </div>
+      </div>
+
+      <div class="col-lg-3 mix sb mb-2" data-order="4">
+        <div class="d_img">
+          <img src="image/sb2.png" class="w-100" alt="demo">
+        </div>
+      </div>
+
+      <div class="col-lg-3 mix rb mb-2" data-order="5">
+        <div class="d_img">
+          <img src="image/rb1.png" class="w-100" alt="demo">
+        </div>
+      </div>
+
+      <div class="col-lg-3 mix rb mb-2" data-order="6">
+        <div class="d_img">
+          <img src="image/rb2.png" class="w-100" alt="demo">
+        </div>
+      </div>
+
+      <div class="col-lg-3 mix kb mb-2" data-order="7">
+        <div class="d_img">
+          <img src="image/kb1.png" class="w-100" alt="demo">
+        </div>
+      </div>
+
+      <div class="col-lg-3 mix kb mb-2" data-order="8">
+        <div class="d_img">
+          <img src="image/kb2.png" class="w-100" alt="demo">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Preloader -->
+<hr>
+<section>
+  <h2 class="text-center text-warning fw-bold display-4 shadow-lg p-3 bg-light rounded">
+    Preloader
+</h2>
+  <div id="loading">
+    <div id="loading-center">
+      <div id="loading-center-absolute">
+        <div class="object" id="object_one"></div>
+        <div class="object" id="object_two"></div>
+        <div class="object" id="object_three"></div>
+      </div>
+    </div>
+  </div>
+</section> 
+
+<!-- Lightbox jq example -->
+
+ <hr>
+<section>
+  <h2 class="text-center text-warning fw-bold display-4 shadow-lg p-3 bg-light rounded">
+    Lightbox jq example
+</h2>
+  <div class="container">
+    <div class="row">
+
+      <div class="col-lg-3">
+        <div class="l_img">
+          <a href="image/hb1.png" class="w-100" data-lightbox="i_img" data-title="My caption">
+          <img src="image/hb2.png" class="img-fluid" alt="slide">
+          </a>
+        </div>
+      </div>
+
+       
+      <div class="col-lg-3">
+        <div class="l_img">
+          <a href="image/rb1.png" class="w-100" data-lightbox="i_img" data-title="My caption">
+          <img src="image/rb2.png" class="img-fluid" alt="slide">
+          </a>
+        </div>
+      </div>
+
+       
+      <div class="col-lg-3">
+        <div class="l_img">
+          <a href="image/kb1.png" class="w-100" data-lightbox="i_img" data-title="My caption">
+          <img src="image/kb2.png" class="img-fluid" alt="slide">
+          </a>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="l_img">
+          <a href="image/hb1.png" class="w-100" data-lightbox="i_img" data-title="My caption">
+          <img src="image/yb1.png" class="img-fluid" alt="slide">
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section> 
+
+<hr>
+<!-- AOS Animation -->
+<section>
+  <h2 class="text-center text-primary fw-bold display-4 shadow-lg p-3 bg-light rounded">
+    AOS Animation
+  </h2>
+
+<div class="container mt-5">
+  <div class="row">
+
+    <div class="col-lg-4">
+      <div class="img" data-aos="zoom-in" data-aos-duration="4000">
+        <img src="image/slide3.jpg" class="img-fluid" alt="demo">
+      </div>
+    </div>
+
+    <div class="col-lg-4">
+      <div class="img" data-aos="zoom-in" data-aos-duration="4000">
+        <img src="image/slide3.jpg" class="img-fluid" alt="demo">
+      </div>
+    </div>
+
+    <div class="col-lg-4">
+      <div class="img" data-aos="zoom-in" data-aos-duration="4000">
+        <img src="image/slide3.jpg" class="img-fluid" alt="demo">
+      </div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+<hr>
+
+<section>
+<div class="container mt-5">
+  <div class="row">
+
+    <div class="col-lg-4">
+      <div class="img" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="2000">
+        <img src="image/slide3.jpg" class="img-fluid" alt="demo">
+      </div>
+    </div>
+
+    <div class="col-lg-4">
+      <div class="img" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="2000">
+        <img src="image/slide3.jpg" class="img-fluid" alt="demo">
+      </div>
+    </div>
+
+    <div class="col-lg-4">
+      <div class="img" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="2000">
+        <img src="image/slide3.jpg" class="img-fluid" alt="demo">
+      </div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+<hr>
+<section>
+<div class="container mt-5">
+  <div class="row">
+
+    <div class="col-lg-4">
+      <div class="img" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="3000">
+        <img src="image/slide3.jpg" class="img-fluid" alt="demo">
+      </div>
+    </div>
+
+    <div class="col-lg-4">
+      <div class="img" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="3000">
+        <img src="image/slide3.jpg" class="img-fluid" alt="demo">
+      </div>
+    </div>
+
+    <div class="col-lg-4">
+      <div class="img" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="3000">
+        <img src="image/slide3.jpg" class="img-fluid" alt="demo">
+      </div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+<hr>
+<section>
+<div class="container mt-5">
+  <div class="row">
+
+    <div class="col-lg-4">
+      <div class="img" data-aos="fade-in" data-aos-easing="linear" data-aos-duration="3000">
+        <img src="image/yb1.png" class="img-fluid" alt="demo">
+      </div>
+    </div>
+
+    <div class="col-lg-4">
+      <div class="img" data-aos="fade-in" data-aos-easing="linear" data-aos-duration="3000">
+        <img src="image/rb1.png" class="img-fluid" alt="demo">
+      </div>
+    </div>
+
+    <div class="col-lg-4">
+      <div class="img" data-aos="fade-in" data-aos-easing="linear" data-aos-duration="3000">
+        <img src="image/hb1.png" class="img-fluid" alt="demo">
+      </div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+<hr>
+<section>
+<div class="container mt-5">
+  <div class="row">
+
+    <div class="col-lg-4">
+      <div class="img" data-aos="flip-up" data-aos-easing="linear" data-aos-duration="3000">
+        <img src="image/kb2.png" class="img-fluid" alt="demo">
+      </div>
+    </div>
+
+    <div class="col-lg-4">
+      <div class="img" data-aos="flip-up" data-aos-easing="linear" data-aos-duration="3000">
+        <img src="image/Portfolio-msc1.jpg" class="img-fluid" alt="demo">
+      </div>
+    </div>
+
+    <div class="col-lg-4">
+      <div class="img" data-aos="flip-up" data-aos-easing="linear" data-aos-duration="3000">
+        <img src="image/Portfolio-msc.jpg" class="img-fluid" alt="demo">
+      </div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+<hr>
+<section>
+<div class="container mt-5">
+  <div class="row">
+
+    <div class="col-lg-4">
+      <div class="img" data-aos="flip-down" data-aos-easing="linear" data-aos-duration="3000">
+        <img src="image/Portfolio-speaker.jpg" class="img-fluid" alt="demo">
+      </div>
+    </div>
+
+    <div class="col-lg-4">
+      <div class="img" data-aos="flip-down" data-aos-easing="linear" data-aos-duration="3000">
+        <img src="image/Portfolio-lamp.jpg" class="img-fluid" alt="demo">
+      </div>
+    </div>
+
+    <div class="col-lg-4">
+      <div class="img" data-aos="flip-down" data-aos-easing="linear" data-aos-duration="3000">
+        <img src="image/Portfolio-apartment.jpg" class="img-fluid" alt="demo">
+      </div>
+    </div>
+
+  </div>
+</div>
+</section>
+<hr>
+
+
+<!-- Go to Top -->
+<button id="goTopBtn" onclick="goToTop()">Go to Top</button>
+
+<!--jquery links -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="vendor/preloader-main/js/jquery-1.12.4.js"></script>
+    <script src="vendor/aos/dist/aos.js"></script>
+    <script src="vendor/mixitup-3/dist/mixitup.min.js"></script>
+    <script src="vendor/lightbox2-dev/dist/js/lightbox.min.js"></script>
+<!--js links-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
